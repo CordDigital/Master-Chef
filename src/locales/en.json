@@ -1,0 +1,224 @@
+{
+	"main": "At MasterChef, we believe that cooking should be accessible to everyone, regardless of their skill level or experience.each product is designed to simplify the cooking process and save you time and effort. We understand that our customers lead busy lives, and that's why we create appliances that are both efficient and easy to use. With MasterChef, you can enjoy a hassle-free cooking experience and focus on what really matters: creating delicious meals to share with your loved ones.",
+	"offerView": {
+		"name": "offer"
+	},
+	"productView": {
+		"productName": "Products",
+		"allProductName": "All Products"
+	},
+	"aboutUsCard": {
+		"title": "About Us",
+		"about1": "Welcome to MasterChef, your destination for unique and simple kitchen appliances that make your life easier. We are a brand dedicated to helping home cooks and professional chefs alike achieve their culinary goals with ease and confidence.",
+		"about2": "Our mission is to provide you with kitchen appliances that are not only easy to use and efficient, but also add a touch of style and sophistication to your kitchen. We believe that cooking should be a joy, not a chore, and that the right tools can make all the difference.",
+		"about3": "Thank you for choosing MasterChef as your go-to brand for unique and simple kitchen appliances. We look forward to helping you create delicious meals and unforgettable culinary experiences for years to come."
+	},
+	"addressDialog": {
+		"addressLabel": "address",
+		"postCodeLabel": "PostCode",
+		"countryLabel": "Country",
+		"stateLabel": "State",
+		"cityLabel": "City",
+		"phoneNumberLabel": "Phone Number",
+		"submitBtn": "Submit"
+	},
+	"addressList": {
+		"countryLabel": "Country",
+		"stateLabel": "State",
+		"cityLabel": "City",
+		"postCodeLabel": "PostCode",
+		"phoneNumberLabel": "Phone Number",
+		"chooseBtn": "Choose",
+		"addBtn": "Add address"
+	},
+	"appCart": {
+		"title": "Products",
+		"qtyLabel": "Qty",
+		"priceLabel": "Price",
+		"couponTitle": "Have a Coupon?",
+		"couponCode": "Coupon code",
+		"couponSubmitBtn": "Submit",
+		"checkOutBtn": "Check Out"
+	},
+	"categoryCard": {
+		"detailsBtn": "more"
+	},
+	"checkOut": {
+		"addressTitle": "Address",
+		"deliveryMethodTitle": "Delivery Method",
+		"orderDetailsTitle": "Order Details",
+		"table": {
+			"productLabel": "Product",
+			"qtyLabel": "Qty",
+			"itemPriceLabel": "Item price",
+			"totalPriceLabel": "Total Price"
+		},
+		"paymentDetailsTitle": "Payment Details",
+		"subTotalLabel": "Sub Total",
+		"taxLabel": "Tax",
+		"shippingChargeLabel": "Shipping Charge",
+		"applyDiscountBtn": "Apply",
+		"applyDiscountTitle": "discount",
+		"discountFieldLabel": "Coupon code",
+		"totalLabel": "Total",
+		"paymentMethod": {
+			"title": "Payment Method",
+			"onlinePaymentLabel": "Online Payment",
+			"payOnDeliveryLabel": "Pay On Delivery"
+		},
+		"checkOutBtn": "Check Out"
+	},
+	"filterData": {
+		"priceLabel": "Price",
+		"fromLabel": "from",
+		"toLabel": "to",
+		"categoryTitle": "Filter by category",
+		"submitBtn": "Apply"
+	},
+	"howWeWork": {
+		"firstCard": {
+			"title": "Secure Payment",
+			"body": "We use industry-standard encryption technology to protect your payment information, ensuring that your personal and financial details are always safe and secure. Our payment gateway is also verified by reputable third-party services to ensure the highest level of security. You can shop with confidence on our website, knowing that your information is protected every step of the way."
+		},
+		"secondCard": {
+			"title": "Delivery",
+			"body": "We are committed to delivering an exceptional experience from start to finish, including the delivery of your purchase. We partner with reputable shipping carriers to ensure that your order arrives quickly and in perfect condition. Our team carefully packs each item to ensure that it is protected during transit, and we provide tracking information so that you can stay up-to-date on your delivery's progress."
+		},
+		"thirdCard": {
+			"title": "Customer Service",
+			"body": "At MasterChef, we value our customers and strive to provide exceptional service. Our knowledgeable and friendly customer service team is available to answer any questions or concerns you may have before, during, and after your purchase. You can contact us at any time, and we will be happy to assist you with anything you need."
+		}
+	},
+	"authPage": {
+		"loginTitle": "Login",
+		"signupTitle": "Registration",
+		"verifyTitle": "Verify Account",
+		"resetTitle": "Reset Password",
+		"emailLabel": "Email",
+		"emailPlaceholder": "your{'@'}email.com",
+		"nameLabel": "Name",
+		"namePlaceholder": "User Name",
+		"phoneLabel": "Phone Number",
+		"phonePlaceholder": "00000000000",
+		"codeLabel": "Code",
+		"codePlaceholder": "0000",
+		"passwordLabel": "Password",
+		"passwordPlaceholder": "************",
+		"submitBtn": "submit",
+		"forgotPasswordTitle": " Did you forgot Your Password?",
+		"resetPasswordBtn": "Reset Password",
+		"resendCodeTitle": "Didn't get the code?",
+		"resendCodeBtn": "resend code",
+		"createAccountTitle": "Don't have Account ?",
+		"createAccountBtn": "Create New Account"
+	},
+	"mainPage": {
+		"title": "Card Title",
+		"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde voluptatem!"
+	},
+	"navbar": {
+		"dashboardBtn": "Dashboard",
+		"productBtn": "Products",
+		"categoryBtn": "Categories",
+		"blogBtn": "Blogs",
+		"offersBtn": "Offers",
+		"wishlistBtn": "Wishlist",
+		"contactUs": "Contact Us",
+		"ourClients": "Our Parteners"
+	},
+	"offerList": {
+		"exploreBtn": "Explore"
+	},
+	"orderDetails": {
+		"orderNumberLabel": "Order Number",
+		"orderDetailsLabel": {
+			"title": "Order Details",
+			"orderNameLabel": " Name",
+			"orederEmailLabel": "Email",
+			"orderTotalAmountLabel": "Total Amount",
+			"orderPaymentMethodLabel": "Payment Method",
+			"orderDeliveryMethodeLabel": "Delivery Method",
+			"orderAdressLabel": "Address"
+		},
+		"orderStatus": {
+			"title": "Order Status",
+			"timeline1": "Order Placed",
+			"timeline2": "Confirmed",
+			"timeline3": "Processed",
+			"timeline4": "Shipped",
+			"timeline5": "Delivered"
+		},
+		"table": {
+			"productLabel": "Product",
+			"qtyLabel": "Number Of Items",
+			"totalPriceLabel": "Total Price"
+		},
+		"subTotalLabel": "Sub Total",
+		"taxLabel": "Tax",
+		"shippingFeeLabel": "Shipping fee",
+		"voucherDiscountLabel": "Voucher Discount",
+		"totalLabel": "Total"
+	},
+	"orderList": {
+		"orderNumberLabel": "Order Number",
+		"qtyLabel": "Qty",
+		"totalPriceLabel": "Total Price",
+		"detailsBtn": "Details"
+	},
+	"productList": {
+		"searchLabel": "Search"
+	},
+	"productDetails": {
+		"stockLabel": "SKU",
+		"outOfStockTitle": "Out Of Stock",
+		"addToCartBtn": "Add To Cart",
+		"buyItNowBtn": "Buy It Now",
+		"evaluationTitle": "Evaluations and Reviews",
+		"ratingTitle": "Rating overview",
+		"reviewTitle": "Reviews",
+		"noReviewTitle": "No Reviews Yet",
+		"addCommentTitle": "LEAVE A COMMENT",
+		"commentLabel": "Message",
+		"submitBtn": "Submit FeedBack"
+	},
+	"userBoard": {
+		"tabs": {
+			"dashboardName": "Dashboard",
+			"orderName": "Orders",
+			"addressName": "Adresses",
+			"accountDetailsName": "Account Details",
+			"wishlistName": "Wishlist",
+			"logoutName": "Logout"
+		},
+		"title": "User",
+		"nameLabel": "Name",
+		"phoneLabel": "Phone Number",
+		"emailLabel": "Email",
+		"passwordLabel": "Password",
+		"passwordPlaceholder": "************"
+	},
+	"appFooter": {
+		"categoryTitle": "Categories",
+		"myAccountTitle": "My Account",
+		"policyTitle": "Website Policy",
+		"contactUsTitle": "Contact Us",
+		"ourClients": "Our Parteners"
+	},
+	"currencyLabel": "EGP",
+	"bestSellings": "Bestsellings",
+	"contactus": {
+		"email": "Email",
+		"address": "Address",
+		"phone": "Phone",
+		"fax": "Fax",
+		"watsapp": "WhatsApp",
+		"location": "Location",
+		"data": {
+			"email": "info@masterchefeg.com",
+			"address": " 11 شارع الصفا متفرع من محور طه حسين النزهه الجديده -مصر الجديده",
+			"phone": "+20-26215756",
+			"fax": "+20-26215755",
+			"watsapp": "+2012-345-678"
+		}
+	}
+}
