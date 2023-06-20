@@ -41,7 +41,7 @@ async function filterHandler(filter) {
 	details.value = productStore.items
 }
 
-watchEffect(async () => {
+watchEffect(async() => {
 	loadData()
 })
 </script>

@@ -22,6 +22,9 @@
 					<p class="mb-2" style="font-size: 1.25rem">
 						{{ $t('aboutUsCard.about3') }}
 					</p>
+					<p class="mb-2" style="font-size: 1.25rem">
+						{{ $t('aboutUsCard.about4') }}
+					</p>
 				</v-card-text>
 			</v-container>
 		</Transition>

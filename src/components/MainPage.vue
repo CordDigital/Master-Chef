@@ -1,5 +1,26 @@
+<script setup>
+import { ref, watchEffect } from 'vue'
+import { useMainFeaturedStore } from '../stores'
+import AppLoadingVue from './AppLoading.vue'
+
+const data = ref()
+const mainFeaturedProducts = await useMainFeaturedStore()
+
+async function loadData() {
+	const mainFeatures = await mainFeaturedProducts.load()
+	console.log('main-featured data: ', mainFeatures.data)
+	data.value = mainFeatures.data
+}
+
+watchEffect(async() => {
+	loadData()
+})
+
+</script>
+
 <template>
-	<v-container>
+	<AppLoadingVue v-if="!data"></AppLoadingVue>
+	<v-container  v-else>
 		<div class="main-container">
 			<div class="main-carusel">
 				<div class="main-carusel__sec">
@@ -13,21 +34,10 @@
 								delay: 1000
 							}"
 						>
-							<swiper-slide>
-								<v-img
-									cover
-									style="width: 100%; height: 100%"
-									class="img"
-									src="./to-delete/smallslider1(a).jpg"
-								></v-img>
-							</swiper-slide>
-							<swiper-slide>
-								<v-img
-									cover
-									style="width: 100%; height: 100%"
-									class="img"
-									src="./to-delete/smallslider1(b).jpg"
-								></v-img>
+							<swiper-slide v-for="(item, index) of data[0]" :key="index">
+							<router-link :to="`/category/${item.category_id}/product`">
+								<v-img cover class="img" style="width: 100%; height: 100%" :src="item.slider_images[0]" />
+							</router-link>
 							</swiper-slide>
 						</swiper-container>
 					</div>
@@ -41,21 +51,10 @@
 								delay: 1000
 							}"
 						>
-							<swiper-slide>
-								<v-img
-									cover
-									style="width: 100%; height: 100%"
-									class="img"
-									src="./to-delete/smallslider1(c).jpg"
-								></v-img>
-							</swiper-slide>
-							<swiper-slide>
-								<v-img
-									cover
-									style="width: 100%; height: 100%"
-									class="img"
-									src="./to-delete/smallslider1(d).jpg"
-								></v-img>
+							<swiper-slide v-for="(item, index) of data[0]" :key="index">
+								<router-link :to="`/category/${item.category_id}/product`">
+									<v-img cover class="img" style="width: 100%; height: 100%" :src="item.slider_images[1]"/>
+								</router-link>
 							</swiper-slide>
 						</swiper-container>
 					</div>
@@ -67,32 +66,16 @@
 						loop="true"
 						style="height: 100%"
 						:autoplay="{
-							delay: 1000
+							delay:980
 						}"
 					>
+						<swiper-slide v-for="(item, index) of data[0]" :key="index">
 
-						<swiper-slide style="position: relative">
-							<v-img
-								cover
-								style="width: 100%; height: 100%"
-								class="img hidden-xs-and-down"
-									src="./to-delete/slider-big-1.jpg"
-							></v-img>
-							<v-img
-							contain
-								style="width: 100%; height: 100%"
-								class="img hidden-sm-and-up"
-									src="./to-delete/slider-big-1.jpg"
-							></v-img>
+							<router-link :to="`/category/${item.category_id}/product`">
+								<v-img cover style="width: 100%; height: 100%"  class="img hidden-xs-and-down" :src="item.main_slider_image"/>
+								<v-img contain style="width: 100%; height: 100%" class="img hidden-sm-and-up"  :src="item.main_slider_image"/>
+							</router-link>
 						</swiper-slide>
-						<!-- <swiper-slide>
-							<v-img
-								cover
-								style="width: 100%; height: 100%"
-								class="img"
-									src="./to-delete/slider-big-2.jpg"
-							></v-img>
-						</swiper-slide> -->
 					</swiper-container>
 				</div>
 				<div class="main-carusel__sec">
@@ -106,21 +89,10 @@
 								delay: 1000
 							}"
 						>
-							<swiper-slide>
-								<v-img
-									cover
-									style="width: 100%; height: 100%"
-									class="img"
-									src="./to-delete/smallslider2(a).jpg"
-								></v-img>
-							</swiper-slide>
-							<swiper-slide>
-								<v-img
-									cover
-									style="width: 100%; height: 100%"
-									class="img"
-									src="./to-delete/smallslider2(b).jpg"
-								></v-img>
+							<swiper-slide v-for="(item, index) of data[0]" :key="index">
+								<router-link :to="`/category/${item.category_id}/product`">
+									<v-img cover class="img" style="width: 100%; height: 100%" :src="item.slider_images[2]"/>
+								</router-link>
 							</swiper-slide>
 						</swiper-container>
 					</div>
@@ -134,21 +106,10 @@
 								delay: 1000
 							}"
 						>
-							<swiper-slide>
-								<v-img
-									cover
-									style="width: 100%; height: 100%"
-									class="img"
-									src="./to-delete/smallslider2(c).jpg"
-								></v-img>
-							</swiper-slide>
-							<swiper-slide>
-								<v-img
-									cover
-									style="width: 100%; height: 100%"
-									class="img"
-									src="./to-delete/smallslider2(d).jpg"
-								></v-img>
+							<swiper-slide v-for="(item, index) of data[0]" :key="index">
+								<router-link :to="`/category/${item.category_id}/product`">
+									<v-img cover class="img" style="width: 100%; height: 100%" :src="item.slider_images[3]"/>
+								</router-link>
 							</swiper-slide>
 						</swiper-container>
 					</div>
@@ -201,27 +162,11 @@
 			object-fit: contain !important;
 		}
 	}
-	// &__main,
-	// &__sec {
-	// 	margin-inline-end: 2%;
-	// 	&:last-of-type {
-	// 		margin-inline-end: 0;
-	// 	}
-	// }
-
 	&__sec {
 		display: none;
 	}
+}
 
-	// &__sec {
-	// 	height: 100%;
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	justify-content: space-between;
-	// }
-	// &__item {
-	// 	height: 46%;
-	// }
 }
-}
+
 </style>

@@ -10,6 +10,7 @@ import createWishListStore from './wishlist.js'
 import createOfferStore from './offers.js'
 import createSettingStore from './settings.js'
 import createOurClientsStore from './ourClients.js'
+import createMainFeaturesStore from './main-features'
 
 const useProductStore = () => {
 	const store = createProductStore(connectors().productConnectors)
@@ -63,6 +64,12 @@ const useOurClientsStore = () => {
 	return store()
 }
 
+const useMainFeaturedStore = () => {
+	const store = createMainFeaturesStore(connectors().ourMainFeaturedProducts)
+	console.log('from store: ', connectors().ourMainFeaturedProducts.getMainFeatured())
+	return store()
+}
+
 export {
 	useProductStore,
 	useCategoryStore,
@@ -74,5 +81,6 @@ export {
 	useWishListStore,
 	useOfferStore,
 	useSettingStore,
-	useOurClientsStore
+	useOurClientsStore,
+	useMainFeaturedStore
 }
